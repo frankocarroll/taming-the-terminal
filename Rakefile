@@ -101,8 +101,8 @@ namespace :book do
       `bundle exec asciidoctor-epub3 #{buildParams(epubParams)} #{book_dir}/ttt-spine.adoc`
       puts " -- Epub output at #{epubParams['destination-dir']}/#{epubParams['out-file']}"
 
-      puts "\nFixing references to podcasts in ePub package.opf file"
-      `scripts/fix-epub.sh`
+      # puts "\nFixing references to podcasts in ePub package.opf file"
+      # `scripts/fix-epub.sh`
 
       puts "Validating ePub"
       `epubcheck #{epubParams['destination-dir']}/#{epubParams['out-file']} -e`
@@ -116,12 +116,12 @@ namespace :book do
       puts "Validating ePub"
       `epubcheck #{epubParams['destination-dir']}/#{epubParams['out-file']} -e`
 
-      puts "\nConverting to Mobi (kf8)..."
-      `bundle exec asciidoctor-epub3 #{buildParams(mobiParams)} #{book_dir}/ttt-spine.adoc`
-      puts " -- Mobi output at #{mobiParams['destination-dir']}/#{mobiParams['out-file']}"
+      # puts "\nConverting to Mobi (kf8)..."
+      # `bundle exec asciidoctor-epub3 #{buildParams(mobiParams)} #{book_dir}/ttt-spine.adoc`
+      # puts " -- Mobi output at #{mobiParams['destination-dir']}/#{mobiParams['out-file']}"
 
-      # removing the ttt-kf8.epub version, because it doesn't have any function
-      `rm #{mobiParams['destination-dir']}/ttt-kf8.epub`
+      # # removing the ttt-kf8.epub version, because it doesn't have any function
+      # `rm #{mobiParams['destination-dir']}/ttt-kf8.epub`
 
       puts "\nConverting to PDF A4... (this one takes a while)"
       `bundle exec asciidoctor-pdf #{buildParams(pdfParams)} #{book_dir}/ttt-spine.adoc`
@@ -137,8 +137,23 @@ namespace :book do
       # 2>/dev/null`
       puts " -- PDF output at #{params['destination-dir']}/#{params['out-file']}"
 
-      puts "\nZip everything"
-      `zip -r output/ttt_all.zip output/ttt*.* output/assets`
+      params = pdfParams
+      params['out-file'] = 'ttt-a5.pdf'
+      params['attribute']['pdf-theme'] = 'bartificer-a5'
+
+      puts "\nConverting to PDF A5... (this one takes a while)"
+      `bundle exec asciidoctor-pdf #{buildParams(params)} --trace #{book_dir}/ttt-spine.adoc`
+      # 2>/dev/null`
+      puts " -- PDF output at #{params['destination-dir']}/#{params['out-file']}"
+
+      puts "\nZip the html version"
+      `zip -r output/ttt_html.zip output/ttt.html output/assets`
+
+      puts "\nZip everything except the html zip"
+      `zip -r output/ttt_all.zip output/ttt*.[a-y]* output/assets`
+
+      puts"\nRemove the ttt.html file because we have already a zipped version which includes the assets"
+      `rm #{htmlParams['destination-dir']}/#{htmlParams['out-file']}`
     end
   end
 end

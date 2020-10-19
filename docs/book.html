@@ -438,6 +438,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=ngjgngJqzr">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=ngjgngJqzr">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=ngjgngJqzr">
+<link rel="manifest" href="/site.webmanifest?v=ngjgngJqzr">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=ngjgngJqzr" color="#29c943">
+<link rel="shortcut icon" href="/favicon.ico?v=ngjgngJqzr">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <style>
     pre.rouge .hll {
         background-color: #ffc;
@@ -453,13 +461,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h1>Taming the Terminal</h1>
 <div class="details">
 <span id="author" class="author">Bart Busschots</span><br>
-<span id="revnumber">version 1.2,</span>
-<span id="revdate">2020-08-17</span>
+<span id="revnumber">version 1.4.2,</span>
+<span id="revdate">2020-10-07</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#colophon">Colophon</a></li>
 <li><a href="#foreword">Foreword</a></li>
 <li><a href="#preface">Preface</a></li>
 <li><a href="#introduction">Introduction</a></li>
@@ -503,64 +510,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#ttt38">TTT Part 38 of n &#8212; TMUX (A Screen Alternative)</a></li>
 <li><a href="#ttt39">TTT Part 39 of n &#8212; Advanced TMUX</a></li>
 <li><a href="#ttt40">TTT Part 40 of n &#8212; Automating TMUX</a></li>
+<li><a href="#afterword">Afterword</a></li>
+<li><a href="#colophon">Colophon</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="colophon">Colophon</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The Podfeet Press</p>
-</div>
-<div class="paragraph">
-<p>&#169; 2020 by The Podfeet Press</p>
-</div>
-<div class="paragraph">
-<p>Published in the Milky Way Galaxy</p>
-</div>
-<div class="paragraph">
-<p>Version 1.2</p>
-</div>
-<div class="paragraph">
-<p>Date revision 2020-08-17</p>
-</div>
-<div class="paragraph">
-<p><em>Compiled: 2020-08-17  6-15-59</em></p>
-</div>
-<div class="paragraph">
-<p>This book is designed and handcrafted by Allison Sheridan and Helma van der Linden.
-The cover is designed by Allison Sheridan.
-The font types are Noto Sans and Noto Serif.</p>
-</div>
-<div class="paragraph">
-<p>Created in <a href="https://asciidoctor.org">Asciidoctor</a> and macOS.</p>
-</div>
-<div id="updates" class="exampleblock">
-<div class="content">
-<div class="paragraph">
-<p><strong>Updates</strong></p>
-</div>
-<div class="paragraph">
-<p>This book will be updated whenever new episodes are added or errors are fixed.
-You can check if a new update is available at:
-<a href="https://github.com/bartificer/taming-the-terminal/releases" class="bare">https://github.com/bartificer/taming-the-terminal/releases</a></p>
-</div>
-</div>
-</div>
-<div id="license" class="paragraph">
-<p><strong>Creative Commons license</strong></p>
-</div>
-<div class="paragraph">
-<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<a class="image" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="assets/creativecommons.org_by-nc-nd_4.0_88x31.png" alt="Creative Commons License"></a>
-</div>
-</div>
-</div>
-</div>
 <div class="sect1">
 <h2 id="foreword">Foreword</h2>
 <div class="sectionbody">
@@ -593,13 +548,13 @@ I especially enjoyed the sections where Bart was explaining some technical topic
 <h2 id="preface">Preface</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Taming the Terminal was created as a podcast and written tutorial with Bart Busschots as the instructor and Allison Sheridan as the student.  Taming the Terminal started its life as part of the <a href="https://www.podfeet.com">NosillaCast Apple Podcast</a> and was eventually spun off as a standalone Podcast. Bart and Allison have been podcasting together for many years, and their friendship and camaraderie make the recordings a delightful way to learn these technical concepts.</p>
+<p>Taming the Terminal was created as a podcast and written tutorial with Bart Busschots as the instructor and Allison Sheridan as the student.  Taming the Terminal started its life as part of the <a href="https://www.podfeet.com">NosillaCast Apple Podcast</a> and was eventually spun off as a standalone Podcast. Bart and Allison have been podcasting together for many years, and their friendship and camaraderie make the recordings a delightful way to learn these technical concepts. To our American readers, note that the text is written in British English so some words such as "instalment" may appear misspelled, but they are not.</p>
 </div>
 <div class="paragraph">
 <p>The book version of the podcast was a labor of love by Allison Sheridan and Helma van der Linden as a surprise gift to Bart Busschots for all he has done for the community.</p>
 </div>
 <div class="paragraph">
-<p>If you enjoy Taming the Terminal, you may also enjoy Bart and Allison&#8217;s second podcast entitled Programming By Stealth.  This is a fortnightly podcast where Bart is teaching the audienct to program, starting with HTML and CSS (that&#8217;s the stealthy part since it&#8217;s not proper programming), into JavaScript and beyond. As with Taming the Terminal, Bart creates fantastic written tutorials for Programming By Stealth, including challenges to cement the listener&#8217;s skills.</p>
+<p>If you enjoy Taming the Terminal, you may also enjoy Bart and Allison&#8217;s second podcast entitled Programming By Stealth.  This is a fortnightly podcast where Bart is teaching the audience to program, starting with HTML and CSS (that&#8217;s the stealthy part since it&#8217;s not proper programming), into JavaScript and beyond. As with Taming the Terminal, Bart creates fantastic written tutorials for Programming By Stealth, including challenges to cement the listener&#8217;s skills.</p>
 </div>
 <div class="paragraph">
 <p>You can find Programming By Stealth and Taming the Terminal podcasts along with Allison&#8217;s other shows at <a href="https://www.podfeet.com/blog/subscribe-to-the-podcasts/">podfeet.com/blog/subscribe-to-the-podcasts/</a>.</p>
@@ -685,8 +640,12 @@ I hope I&#8217;m right in interpreting that as evidence that there are a lot of 
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 1</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT01CommandShells/TTT_01_Command_Shells.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT01CommandShells/TTT_01_Command_Shells.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -762,7 +721,7 @@ OS X does not ship with one command shell, it ships with SIX (<a href="https://e
 <p>The default shell on OS X is the Bourne Again Shell (Bash), so that&#8217;s the shell we&#8217;ll be using for the remainder of this series.
 If you&#8217;ve not altered the defaults, then whenever you open a Terminal window on OS X, what you&#8217;re presented with is a Bash command shell.
 Bash is an updated and improved version of the older Bourne Shell (sh), which was the default shell in Unix for many years.
-The original Bourne Shell dates all the way back to 1977 and is called after it&#8217;s creator, <a href="https://en.wikipedia.org/wiki/Stephen_Richard_Bourne">Stephen Bourne</a>.
+The original Bourne Shell dates all the way back to 1977 and is called after its creator, <a href="https://en.wikipedia.org/wiki/Stephen_Richard_Bourne">Stephen Bourne</a>.
 The Bourne Again Shell is a &#8216;newer&#8217; update to the Bourne Shell dating back to 1989, the name being a nerdy religious joke by its author, <a href="https://en.wikipedia.org/wiki/Brian_Fox_(computer_programmer)">Brian Fox</a>.
 The Bourne Again Shell was not the last in the line of shells tracing their origins to the Bourne Shell, there is also zsh which dates back to 1990, but despite being a more powerful shell, it hasn&#8217;t taken off like Bash has.</p>
 </div>
@@ -813,8 +772,12 @@ Having focused on command shells last time, this instalment will focus on the an
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 2</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT02Commands/TTT_02_Commands.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT02Commands/TTT_02_Commands.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -1218,8 +1181,12 @@ This time we&#8217;ll be looking at the anatomy of file systems in general, and 
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 3</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT03FileSystems/TTT_03_File_Systems.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT03FileSystems/TTT_03_File_Systems.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -1333,7 +1300,7 @@ Thankfully, we now have something called <code>automount</code> to automatically
 <p>The exact details will change from OS to OS, but on Ubuntu, the folder <code>/media/</code> is used to hold mount points for any file system you connect to the computer.
 Unlike Windows, most Linux/Unix systems make use of filesystems&#8217; volume names and use them to give the mount points sensible names, rather than random letters.
 If I connect a USB drive containing a single partition with a filesystem with the volume name <code>Allison_Pen_Drive</code>, Ubuntu will automatically mount the filesystem on that thumb drive when you plug it in, using the mount point <code>/media/Allison_Pen_Drive/</code>.
-If that pen drive contained a single folder called <code>myFolder</code> containing a single file called <code>myFile.txt</code>, then <code>myFile.txt</code> would be added to the filesystem as <code>/media/Allison_Pen_Driver/myFolder/MyFile.txt</code>.</p>
+If that pen drive contained a single folder called <code>myFolder</code> containing a single file called <code>myFile.txt</code>, then <code>myFile.txt</code> would be added to the filesystem as <code>/media/Allison_Pen_Drive/myFolder/myFile.txt</code>.</p>
 </div>
 <div class="paragraph">
 <p>Having the ability to mount any filesystem as any folder within a single master filesystem allows you to easily separate different parts of your OS across different drives.
@@ -1380,8 +1347,12 @@ a Bash command shell.</p>
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 4</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT04Navigation/TTT_04_Navigation.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT04Navigation/TTT_04_Navigation.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -1572,8 +1543,12 @@ In future instalments, we&#8217;ll take a brief look at the extra file informati
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 5</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT05FilePermissions/TTT_05_File_Permissions.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT05FilePermissions/TTT_05_File_Permissions.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -1762,8 +1737,12 @@ We&#8217;ll only be looking at how to read these attributes though, not how to a
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 6</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT06MoreFilePermissions/TTT_06_More_File_Permissions.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT06MoreFilePermissions/TTT_06_More_File_Permissions.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -2065,8 +2044,12 @@ We&#8217;re almost ready to move on and start looking at how processes work in U
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 7</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT07ManagingFiles/TTT_07_Managing_Files.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT07ManagingFiles/TTT_07_Managing_Files.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -2202,7 +2185,7 @@ To copy a file to the folder you are currently in, you can use <code>.</code> as
 The flag should precede the argument list.</p>
 </div>
 <div class="paragraph">
-<p>Let&#8217;s now create yet another empty folder and copy the folder <code>secondLevelFolder</code>, and all it&#8217;s contents, into the new folder:</p>
+<p>Let&#8217;s now create yet another empty folder and copy the folder <code>secondLevelFolder</code>, and all its contents, into the new folder:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2296,8 +2279,12 @@ Now it&#8217;s time to get stuck back in though, and start a whole new topic&#82
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 8</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT08Processes_201509/TTT_08_Processes.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT08Processes_201509/TTT_08_Processes.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -2603,8 +2590,12 @@ This time we&#8217;ll move on to controlling processes, specifically starting an
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 9</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT09ControllingProcesses/TTT_09_Controlling_Processes.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT09ControllingProcesses/TTT_09_Controlling_Processes.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -2656,7 +2647,7 @@ For this to work you&#8217;ll need to be on OS X, have FireFox installed, and ha
 <div class="paragraph">
 <p>You&#8217;ll see that the FireFox GUI launches as normal and that it outputs some information on what it&#8217;s doing to the Terminal.
 You&#8217;ll also notice that you have lost your command prompt.
-You can hammer the enter key all you want, but you&#8217;re not getting that command prompt back until the FireFox process exists and hands control back to your command shell.
+You can hammer the enter key all you want, but you&#8217;re not getting that command prompt back until the FireFox process exits and hands control back to your command shell.
 Go ahead and do that through the GUI as normal.
 Notice how the moment FireFox quits you get your command prompt back.</p>
 </div>
@@ -2694,7 +2685,7 @@ Firefox is still running, but you have your command prompt back.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Also, when you launch FireFox from a command shell you can pass it flags and arguments to alter it&#8217;s behaviour, for a list of valid options run:</p>
+<p>Also, when you launch FireFox from a command shell you can pass it flags and arguments to alter its behaviour, for a list of valid options run:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2812,7 +2803,7 @@ There is another command for ending processes that uses process names rather tha
 </div>
 </div>
 <div class="paragraph">
-<p>Rather than looking up it&#8217;s PID, let&#8217;s now exit it with the <code>killall</code> command:</p>
+<p>Rather than looking up its PID, let&#8217;s now exit it with the <code>killall</code> command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2881,8 +2872,12 @@ If you run it from the command line, the chances are very high that there will b
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 10</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT10Man/TTT_10_man.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT10Man/TTT_10_man.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -3111,8 +3106,12 @@ For those interested in learning a little more I&#8217;ll also give a very quick
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 11</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT11TextFiles/TTT_11_Text_Files.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT11TextFiles/TTT_11_Text_Files.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -3198,7 +3197,7 @@ While there is a <code>more</code> command, it&#8217;s actually a copy of <code>
 </div>
 <div class="paragraph">
 <p>The <code>less</code> command is very powerful, and it can deal with very large files without getting bogged down. As an example, most Linux and Unix distributions contain a dictionary file, usually located at <code>/usr/share/dict/words</code>.
-This file is 235,886 long on OS X, and <code>less</code> has no problems searching or navigating it:</p>
+This file is 235,886 lines long on OS X, and <code>less</code> has no problems searching or navigating it:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -3487,8 +3486,12 @@ Although this might sound like a simple topic, there&#8217;s actually a lot to c
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 12</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT12TheEnvironment/TTT_12_The_Environment.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT12TheEnvironment/TTT_12_The_Environment.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -4016,8 +4019,12 @@ We&#8217;ll look at what it does, how it&#8217;s initialised, and, in the proces
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 13</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT13PATH/TTT_13_PATH.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT13PATH/TTT_13_PATH.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -4197,7 +4204,7 @@ nano testFile.txt</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>It&#8217;s not that the executable files have gone, or no longer work, it&#8217;s that our instance of Bash has lost the ability to find them because it&#8217;s <code>PATH</code> is blank.
+<p>It&#8217;s not that the executable files have gone, or no longer work, it&#8217;s that our instance of Bash has lost the ability to find them because its <code>PATH</code> is blank.
 We can still run the executables by using their full paths, e.g.:</p>
 </div>
 <div class="listingblock">
@@ -4612,8 +4619,12 @@ In this instalment we&#8217;ll look at two other kinds of environment changes yo
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 14</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT14AliasesAndPrompts/TTT_14_Aliases_and_Prompts.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT14AliasesAndPrompts/TTT_14_Aliases_and_Prompts.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -4935,8 +4946,12 @@ We&#8217;ll be introducing the concept of streams, which can be used to connect 
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 15</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT15Plumbing/TTT_15_Plumbing.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT15Plumbing/TTT_15_Plumbing.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -4981,11 +4996,11 @@ within a web server it is connected to the HTTP request data sent to the server 
 </ul>
 </div>
 <div class="paragraph">
-<p>Many Unix/Linux commands can take their input from <code>STDIN</code>, and just about every command will write it&#8217;s output to <code>STDOUT</code> and/or <code>STDERR</code>.
+<p>Many Unix/Linux commands can take their input from <code>STDIN</code>, and just about every command will write its output to <code>STDOUT</code> and/or <code>STDERR</code>.
 This allows commands to be strung together by the simple act of redirecting these streams&#8201;&#8212;&#8201;if you redirect the output of one command to the input of another, you have chained them together!</p>
 </div>
 <div class="paragraph">
-<p>Remember that every process has its own environment, and therefore, it&#8217;s own version of the three standard streams.
+<p>Remember that every process has its own environment, and therefore, its own version of the three standard streams.
 The redirection operators alter the copies of these three variables within individual processes, so, from the command&#8217;s point of view, it always reads from <code>STDIN</code>, and always writes to <code>STDOUT</code> and/or <code>STDERR</code>, but where those streams flow to is determined by their environment.</p>
 </div>
 </div>
@@ -4997,13 +5012,13 @@ The redirection operators alter the copies of these three variables within indiv
 <div class="ulist">
 <ul>
 <li>
-<p><strong><code>|</code> (the &#8216;pipe&#8217; operator)</strong>&#8201;&#8212;&#8201;this operator connects <code>STDOUT</code> in the environment of the command to it&#8217;s left to <code>STDIN</code> in the environment of the command to it&#8217;s right.</p>
+<p><strong><code>|</code> (the &#8216;pipe&#8217; operator)</strong>&#8201;&#8212;&#8201;this operator connects <code>STDOUT</code> in the environment of the command to its left to <code>STDIN</code> in the environment of the command to its right.</p>
 </li>
 <li>
-<p><strong><code>&gt;</code> and <code>&gt;&gt;</code></strong>&#8201;&#8212;&#8201;these operators connect <code>STDOUT</code> in the environment of the command to their left a file at the path specified to their right</p>
+<p><strong><code>&gt;</code> and <code>&gt;&gt;</code></strong>&#8201;&#8212;&#8201;these operators connect <code>STDOUT</code> in the environment of the command to their left to a file at the path specified to their right</p>
 </li>
 <li>
-<p><strong><code>&lt;</code></strong>&#8201;&#8212;&#8201;this operator connects the contents of the file at the path specified to it&#8217;s right to <code>STDIN</code> in the environment of the command to it&#8217;s left</p>
+<p><strong><code>&lt;</code></strong>&#8201;&#8212;&#8201;this operator connects the contents of the file at the path specified to its right to <code>STDIN</code> in the environment of the command to its left</p>
 </li>
 </ul>
 </div>
@@ -5204,8 +5219,12 @@ Well, that&#8217;s what we&#8217;ll be doing in this instalment.</p>
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 16</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT16CrossingTheStreams/TTT_16_Crossing_the_Streams.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT16CrossingTheStreams/TTT_16_Crossing_the_Streams.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -5552,8 +5571,12 @@ While this series focuses on the Terminal, an understanding of regular expressio
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 17</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT17RegularExpressions/TTT_17_Regular_Expressions.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT17RegularExpressions/TTT_17_Regular_Expressions.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -5652,11 +5675,11 @@ Because this series is all about the Terminal, the answer is actually very easy,
 <div class="paragraph">
 <p>Let&#8217;s start with some context.
 Firstly, when it comes to regular expressions you can&#8217;t ignore my favourite scripting language, Perl.
-Perl was developed for the purpose of processing text, which means pattern matching is at the very core of it&#8217;s DNA.
+Perl was developed for the purpose of processing text, which means pattern matching is at the very core of its DNA.
 The official backronym for Perl is <em>the Practical Extracting and Reporting Language</em>, and the joke backronym is <em>the Pathologically Eclectic Rubbish Lister</em>. Either way, Perl is all about extracting information from textual data, so it&#8217;s all about pattern matching.</p>
 </div>
 <div class="paragraph">
-<p>Because Perl has pattern matching so deeply embedded within it&#8217;s being, it should come as no surprise that the gold standard for regular expressions are so-called <em>Perl-Style Regular Expressions</em>, which you&#8217;ll often find referenced in man pages and other documentation as PCRE, which stands for <em>Perl Compatible Regular Expression</em>.
+<p>Because Perl has pattern matching so deeply embedded within its being, it should come as no surprise that the gold standard for regular expressions are so-called <em>Perl-Style Regular Expressions</em>, which you&#8217;ll often find referenced in man pages and other documentation as PCRE, which stands for <em>Perl Compatible Regular Expression</em>.
 What we&#8217;re going to learn is not exactly PCRE, but, a sub-set of PCRE called POSIX ERE.
 The fact that POSIX ERE is a subset of PCRE means that everything we learn will be useful to us in any application that uses PCRE, which means we can transfer what we learn here to a LOT of other contexts, including the two common web programming languages PHP and JavaScript (which both use PCRE for their regular expression implementations).</p>
 </div>
@@ -5888,8 +5911,20 @@ I&#8217;ll stop here and leave the following as a teaser for the next instalment
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT18aMoreREs/TTT_18a_More_REs.mp3">Your browser does not support HTML 5 audio</audio></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT18bMoreREs/TTT_18b_More_REs.mp3">Your browser does not support HTML 5 audio</audio></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT18aMoreREs/TTT_18a_More_REs.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT18bMoreREs/TTT_18b_More_REs.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Scan the QRcode to listen on a different device</p></td>
@@ -6424,7 +6459,7 @@ This is what we&#8217;ll be moving on to next in this series.</p>
 <div class="paragraph">
 <p>In the previous two instalments (<a href="#ttt17">17</a> &amp; <a href="#ttt18">18</a>) of this series, we learned how to represent patterns with regular expressions, or, to be more specific, with POSIX Extended Regular Expression (or EREs).
 We used the <code>egrep</code> command to test our regular expressions, but we didn&#8217;t discuss the command itself in detail.
-Now that we understand regular expressions, it&#8217;s time to take a closer look at both <code>egrep</code>, and it&#8217;s older brother <code>grep</code>, both commands for filtering and searching text.</p>
+Now that we understand regular expressions, it&#8217;s time to take a closer look at both <code>egrep</code>, and its older brother <code>grep</code>, both commands for filtering and searching text.</p>
 </div>
 <div class="sidebarblock">
 <div class="content">
@@ -6432,8 +6467,12 @@ Now that we understand regular expressions, it&#8217;s time to take a closer loo
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 19</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT19TextSearches/TTT_19_Text_Searches.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT19TextSearches/TTT_19_Text_Searches.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -6733,8 +6772,12 @@ For that, you need a different command, for that you need <code>find</code>.</p>
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 20</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT20FileSearches/TTT_20_File_Searches.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT20FileSearches/TTT_20_File_Searches.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -7159,8 +7202,12 @@ Then we&#8217;ll end by looking at an OS X-only alternative to <code>find</code>
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 21</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT21MoreSearching/TTT_21_More_Searching.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT21MoreSearching/TTT_21_More_Searching.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -7422,8 +7469,12 @@ We&#8217;ll start with a look at some tips and tricks for getting the most out o
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 22</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT22TipsAndTricks/TTT_22_Tips_and_Tricks.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT22TipsAndTricks/TTT_22_Tips_and_Tricks.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -7445,7 +7496,7 @@ We&#8217;ll start with a look at some tips and tricks for getting the most out o
 <div class="paragraph">
 <p>Bash provides a number of different ways to repeat commands you&#8217;ve executed in the past.
 The simplest command of all of these is <code>!!</code>.
-You can use this on it&#8217;s own:</p>
+You can use this on its own:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -7652,8 +7703,20 @@ Ultimately, it&#8217;s actually a very elegant design, but that elegance may not
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT23aNetworkingIntro/TTT_23a_Networking_Intro.mp3">Your browser does not support HTML 5 audio</audio></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT23bNetworkingIntro/TTT_23b_Networking_Intro.mp3">Your browser does not support HTML 5 audio</audio></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT23aNetworkingIntro/TTT_23a_Networking_Intro.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT23bNetworkingIntro/TTT_23b_Networking_Intro.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Scan the QRcode to listen on a different device</p></td>
@@ -8314,8 +8377,12 @@ Specifically, we&#8217;ll look at MAC addresses, the difference between hubs, sw
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 24</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT24EthernetAndARP/TTT_24_Ethernet_and_ARP.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT24EthernetAndARP/TTT_24_Ethernet_and_ARP.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -8682,8 +8749,20 @@ This is the concept we&#8217;ll be focusing on in this instalment.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT25aIPSubnets/TTT_25a_IP_Subnets.mp3">Your browser does not support HTML 5 audio</audio></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT25bIPSubnets/TTT_25b_IP_Subnets.mp3">Your browser does not support HTML 5 audio</audio></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT25aIPSubnets/TTT_25a_IP_Subnets.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT25bIPSubnets/TTT_25b_IP_Subnets.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Scan the QRcode to listen on a different device</p></td>
@@ -9542,8 +9621,12 @@ In this instalment, we&#8217;ll look at the protocol that makes that possible, t
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 26</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT26DHCP/TTT_26_DHCP.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT26DHCP/TTT_26_DHCP.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -10028,8 +10111,20 @@ The Domain Name System (DNS) exists to bridge this gap, allowing domain names to
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT27aDNS/TTT_27a_DNS.mp3">Your browser does not support HTML 5 audio</audio></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT27bDNS/TTT_27b_DNS.mp3">Your browser does not support HTML 5 audio</audio></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT27aDNS/TTT_27a_DNS.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT27bDNS/TTT_27b_DNS.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Scan the QRcode to listen on a different device</p></td>
@@ -10787,8 +10882,12 @@ In short&#8201;&#8212;&#8201;how to get from a vague complaint like &#8220;the i
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 28</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT28NetworkTroubleshooting/TTT_28_Network_Troubleshooting.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT28NetworkTroubleshooting/TTT_28_Network_Troubleshooting.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -11191,7 +11290,7 @@ After all, it would be embarrassing to phone your ISP only to find that the prob
 <p>You can use the <code>traceroute</code> command to attempt to clarify the location of the problem.
 The <code>traceroute</code> command streams out a series of packets with different TTLs (Time To Live specified not in time but in hops between IP routers).
 Every TCP/IP stack that interacts with a <code>traceroute</code> packet at an IP level should decrement the TTL by one before passing the packet on to the next router along the packet&#8217;s route to the destination being tested.
-If a TCP/IP stack gets a <code>traceroute</code> packet and there is no TTL left, it should reply to the originator informing it of where the packet got to within it&#8217;s TTL.
+If a TCP/IP stack gets a <code>traceroute</code> packet and there is no TTL left, it should reply to the originator informing it of where the packet got to within its TTL.
 By piecing together the information contained in all the returned packets for each TTL it&#8217;s possible to see how packets between the source and destination IPs traverse the internet.
 Because this protocol uses many packets, you are not seeing the journey any one packet took, but the average journey of all the packets.</p>
 </div>
@@ -11262,7 +11361,7 @@ If using Ethernet it could also be a damaged Ethernet cable, and if using WiFi i
 <div class="sect2">
 <h3 id="_step_4_check_name_resolution">Step 4 &#8212; Check Name Resolution</h3>
 <div class="paragraph">
-<p>Almost everything we do online involves domain names rather than IP addresses, so if a computer has lost the ability to convert domain names to IP addresses it will appear to have lost it&#8217;s internet connection even if it has full IP-level connectivity.</p>
+<p>Almost everything we do online involves domain names rather than IP addresses, so if a computer has lost the ability to convert domain names to IP addresses it will appear to have lost its internet connection even if it has full IP-level connectivity.</p>
 </div>
 <div class="paragraph">
 <p>To test name resolution simply try to resolve a known-good domain name like <code>google.com</code>:</p>
@@ -11395,7 +11494,7 @@ This protocol is one of the absolute workhorses of the internet, and a vital too
 </div>
 <div class="paragraph">
 <p>At it&#8217;s simplest level SSH allows you to execute commands on a remote computer, but because it was designed around the concept of a secure tunnel between two systems, SSH has expanded to allow all kinds of advanced features.
-The least-generous description of this could be that SSH has become a kind of sysadmins <a href="https://www.urbandictionary.com/define.php?term=fridgeoven">fridgeoven</a>.
+The least-generous description of this could be that SSH has become a kind of sysadmin&#8217;s <a href="https://www.urbandictionary.com/define.php?term=fridgeoven">fridgeoven</a>.
 But I don&#8217;t buy that, I prefer the alternative interpretation&#8201;&#8212;&#8201;it simply makes sense not to reinvent the wheel, and to allow as much information as possible to flow throw the secure connection SSH provides between the two endpoints.</p>
 </div>
 <div class="paragraph">
@@ -11407,8 +11506,12 @@ But I don&#8217;t buy that, I prefer the alternative interpretation&#8201;&#8212
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 29</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT29IntroToSSH/TTT_29_Intro_to_SSH.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT29IntroToSSH/TTT_29_Intro_to_SSH.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -11680,8 +11783,12 @@ We also saw how SSH uses host keys to protect us from man-in-the-middle (MITM) a
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 30</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT30SSHingMoreSecurely/TTT_30_SSHing_More_Securely.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT30SSHingMoreSecurely/TTT_30_SSHing_More_Securely.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -12066,8 +12173,12 @@ In this instalment, we&#8217;ll look at three different ways of securely copying
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 31</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT31SSHFileTransfers/TTT_31_SSH_File_Transfers.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT31SSHFileTransfers/TTT_31_SSH_File_Transfers.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -12132,7 +12243,7 @@ You&#8217;ll need to replace <code>my_remote_username</code> with your username 
 </div>
 </div>
 <div class="paragraph">
-<p>As we move files around, you can monitor the content of the local folder, and it&#8217;s sub-folders, with the command:</p>
+<p>As we move files around, you can monitor the content of the local folder, and its sub-folders, with the command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -12164,7 +12275,7 @@ ssh <span style="color: #008080">$SSH_USER</span>@<span style="color: #008080">$
 </div>
 </div>
 <div class="paragraph">
-<p>As we move files around, you can monitor the content of the remote folder, and it&#8217;s sub-folders, with the command:</p>
+<p>As we move files around, you can monitor the content of the remote folder, and its sub-folders, with the command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -12545,8 +12656,12 @@ That makes this an unusual instalment, but I hope you will still find it worthwh
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 32</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT32SSHTunneling/TTT_32_SSH_Tunneling.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT32SSHTunneling/TTT_32_SSH_Tunneling.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -12583,7 +12698,7 @@ With XQuartz installed, X11 apps can run in a regular OS X window.</p>
 SSH effectively teleports the GUI across the network!</p>
 </div>
 <div class="paragraph">
-<p>For this to work the remote computer must have X11 installed, the remotely running app must use X11 to render it&#8217;s GUI, and the local computer must have X11 installed.</p>
+<p>For this to work the remote computer must have X11 installed, the remotely running app must use X11 to render its GUI, and the local computer must have X11 installed.</p>
 </div>
 <div class="paragraph">
 <p>This means that Macs with XQuartz installed can receive remote GUIs, but cannot be the source or remote GUIs unless there are X11 apps installed on the Mac (possible, but uncommon).</p>
@@ -12822,8 +12937,12 @@ So far we&#8217;ve learned how to <a href="#ttt29">securely execute terminal com
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 33</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT33SSHBookmarks/TTT_33_SSH_Bookmarks.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT33SSHBookmarks/TTT_33_SSH_Bookmarks.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -13090,8 +13209,12 @@ We are not exploring protocols in the Application Layer.</p>
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 34</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT34IntroducingHTTP/TTT_34_Introducing_HTTP.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT34IntroducingHTTP/TTT_34_Introducing_HTTP.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -13506,8 +13629,12 @@ These two commands can do many things, but we&#8217;ll focus on two specific use
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 35</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT35HTTPCommands/TTT_35_HTTP_Commands.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/TTT35HTTPCommands/TTT_35_HTTP_Commands.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -13871,8 +13998,12 @@ It&#8217;s extremely flexible and very useful for things like scheduling backups
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 36</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-36-screen-and-cron_202004/TTT_36_screen_and_cron.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-36-screen-and-cron_202004/TTT_36_screen_and_cron.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -14412,8 +14543,12 @@ This provides us with a good opportunity to have a look at the SSH Agent in gene
 <div class="paragraph">
 <p>Listen Along: Taming the Terminal Podcast Episode 37</p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-37-ssh-agents_202004/TTT_37_SSH_Agents.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-37-ssh-agents_202004/TTT_37_SSH_Agents.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -14724,8 +14859,12 @@ This is yet another reason to stop using password-less SSH identities&#8201;&#82
 <p>Listen Along: Taming the Terminal Podcast Episode 38<br>
 part of  <a href="https://www.podfeet.com/blog/2020/07/ccatp-645/">episode 645 of the Chit Chat Across the Pond Podcast</a></p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-38-tmux/TTT_38_TMUX.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-38-tmux/TTT_38_TMUX.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -14891,7 +15030,7 @@ wait-for (wait) [-L|-S|-U] channel
 <p>We can now see that we have two sessions, again, rather un-imaginatively named <code>0</code> and <code>1</code>. 🙂</p>
 </div>
 <div class="paragraph">
-<p>Let&#8217;s now use our third terminal window to join our first session using the <code>attach-session</code> command via it&#8217;s alias <code>attach</code>:</p>
+<p>Let&#8217;s now use our third terminal window to join our first session using the <code>attach-session</code> command via its alias <code>attach</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -15084,7 +15223,7 @@ ttt: 1 windows (created Sat Jul 11 13:33:00 2020) (attached)
 <code>||</code> operator when the command to the left succeeds. This approach is known as <em>lazy evaluation</em>, and used by many programming languages too.</p>
 </div>
 <div class="paragraph">
-<p>Note that sh-derived shells take the same approach when evaluating boolean <em>and</em> operations, the operator for which is <code>&amp;&amp;</code>. In this case, when the command to the left of the <code>&amp;&amp;</code> evaluates to <code>false</code>, the result will always be <code>false</code>, regardless of the outcome of the second command, because <code>false true</code> is <code>false</code>, and so is <code>false &amp;&amp; false</code>.</p>
+<p>Note that sh-derived shells take the same approach when evaluating boolean <em>and</em> operations, the operator for which is <code>&amp;&amp;</code>. In this case, when the command to the left of the <code>&amp;&amp;</code> evaluates to <code>false</code>, the result will always be <code>false</code>, regardless of the outcome of the second command, because <code>false &amp;&amp; true</code> is <code>false</code>, and so is <code>false &amp;&amp; false</code>.</p>
 </div>
 <div class="paragraph">
 <p>This second approach is probably more commonly used than the first, because it allows you do execute a second command if, and only if, the first succeeds. I often use this to conditionally reboot a server after a successful software update:</p>
@@ -15163,8 +15302,12 @@ ttt: 1 windows (created Sat Jul 11 13:33:00 2020) (attached)
 <p>Listen Along: Taming the Terminal Podcast Episode 39<br>
 part of  <a href="https://www.podfeet.com/blog/2020/07/ccatp-647/">episode 647 of the Chit Chat Across the Pond Podcast</a></p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-39-advanced-tmux/TTT_39_Advanced_TMUX.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-39-advanced-tmux/TTT_39_Advanced_TMUX.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -15400,7 +15543,7 @@ part of  <a href="https://www.podfeet.com/blog/2020/07/ccatp-647/">episode 647 o
 <h2 id="ttt40">TTT Part 40 of n &#8212; Automating TMUX</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>In <a href="#ttt38">instalment 38</a> we introduced TMUX as a replacement for the <code>screen</code> command which RedHat have deprecated on RedHat Enterprise Linux, and it&#8217;s free community variants CentOS and Fedora. Next we looked at how we can use TMUX&#8217;s windows and panes model to take things to the next level and give us multiple virtual terminal windows within a single actual terminal window. We learned that sessions contain windows which contain panes which run a shell.</p>
+<p>In <a href="#ttt38">instalment 38</a> we introduced TMUX as a replacement for the <code>screen</code> command which RedHat have deprecated on RedHat Enterprise Linux, and its free community variants CentOS and Fedora. Next we looked at how we can use TMUX&#8217;s windows and panes model to take things to the next level and give us multiple virtual terminal windows within a single actual terminal window. We learned that sessions contain windows which contain panes which run a shell.</p>
 </div>
 <div class="paragraph">
 <p>We learned how to create a fresh TMUX session which gives us a single window containing a single pane running our default shell (bash or ZSH most probably). We then used TMUX commands to create additional windows, which we described as being like browser tabs, and we learned how to navigate between them. Finally, we learned how to split single panes vertically or horizontally, and to navigate between the panes within the current window.</p>
@@ -15415,8 +15558,12 @@ part of  <a href="https://www.podfeet.com/blog/2020/07/ccatp-647/">episode 647 o
 <p>Listen Along: Taming the Terminal Podcast Episode 40<br>
 part of <a href="https://www.podfeet.com/blog/2020/08/ccatp-650/">episode 650 of the Chit Chat Across the Pond Podcast</a></p>
 </div>
-<div class="paragraph">
-<p><audio controls='controls' src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-40-automating-tmux/TTT_40_Automating_TMUX.mp3">Your browser does not support HTML 5 audio</audio></p>
+<div class="audioblock">
+<div class="content">
+<audio src="https://media.blubrry.com/tamingtheterminal/archive.org/download/ttt-40-automating-tmux/TTT_40_Automating_TMUX.mp3" controls>
+Your browser does not support the audio tag.
+</audio>
+</div>
 </div>
 <div class="paragraph">
 <p>Scan the QRcode to listen on a different device</p>
@@ -15455,7 +15602,7 @@ part of <a href="https://www.podfeet.com/blog/2020/08/ccatp-650/">episode 650 of
 <p>The key to automating the creation of complex TMUX sessions is TMUX&#8217;s ability to accept multiple TMUX commands within a single shell command. These multiple commands will be applied in order, so they effectively allow us to script the TMUX session initialisation.</p>
 </div>
 <div class="paragraph">
-<p>Multiple TMUX commands are separated by passing <code>;</code> as a shell argument. The thing to watch out for is that the <code>;</code> character has a meaning in the shells we are using in this series (Bash &amp; ZSH), so we need to escape that character. We can do that in two ways, we can pre-fix it with a backslash, or, we can single-quote it. The following will both create named new sessions with a horizontally split pane:</p>
+<p>Multiple TMUX commands are separated by passing <code>;</code> as a shell argument. The thing to watch out for is that the <code>;</code> character has a meaning in the shells we are using in this series (Bash &amp; ZSH), so we need to escape that character. We can do that in two ways, we can prefix it with a backslash, or, we can single-quote it. The following will both create named new sessions with a horizontally split pane:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -15717,7 +15864,7 @@ tmux new <span style="color: #000080">-s</span> topterm <span style="color: #d14
 <p>You can now run this script from the current folder with <code>./topterm</code>, or better yet, from any folder using <code>~/scripts/topterm</code>.</p>
 </div>
 <div class="paragraph">
-<p>If you&#8217;d like this script to be executable from any folder without needing to pre-fix it with <code>~/scripts/</code> you need to add <code>~/scripts</code> to your <code>PATH</code> environment (for a detailed discussion on <code>PATH</code> see <a href="#ttt13">instalment 13</a>). In Bash you can do that by adding the following line to the end of your <code>~/.bash_profile</code> file and opening a fresh terminal window (or sourcing the updated profile with <code>source ~/.bash_profile</code>):</p>
+<p>If you&#8217;d like this script to be executable from any folder without needing to prefix it with <code>~/scripts/</code> you need to add <code>~/scripts</code> to your <code>PATH</code> environment (for a detailed discussion on <code>PATH</code> see <a href="#ttt13">instalment 13</a>). In Bash you can do that by adding the following line to the end of your <code>~/.bash_profile</code> file and opening a fresh terminal window (or sourcing the updated profile with <code>source ~/.bash_profile</code>):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -15779,7 +15926,69 @@ tmux new <span style="color: #000080">-s</span> topterm <span style="color: #d14
 <p>However, since my intention here was never to try teach everything there is to know about TMUX, we&#8217;re going to end our exploration of the tool here. Hopefully this has been enough to pique your interest, and to enable you to learn anything else you need independently.</p>
 </div>
 <div class="paragraph">
-<p>This series will now go back on hiatus for a little while, but the plan is to resurrect it again in a few months when Apple release macOS 11 Big Sur. Why? Because that&#8217;s an opportune moment to release a series of instalments on the topic of switching from Bash to ZSH. Since macOS Catalina the default shell on the Mac has been ZSH rather than Bash, with Bash available as an option. Since Catalina was such a bug-fest on launch many people have chosen not to upgrade all their machines (me included!), but I expect that with Big Sur&#8217;s debut there will be a lot of Terminal Tamers suddenly finding Bash&#8217;s familar <code>$</code> command prompt replaced with ZSH&#8217;s alien-feeling <code>%</code> command prompt!</p>
+<p>This series will now go back on hiatus for a little while, but the plan is to resurrect it again in a few months when Apple release macOS 11 Big Sur. Why? Because that&#8217;s an opportune moment to release a series of instalments on the topic of switching from Bash to ZSH. Since macOS Catalina the default shell on the Mac has been ZSH rather than Bash, with Bash available as an option. Since Catalina was such a bug-fest on launch many people have chosen not to upgrade all their machines (me included!), but I expect that with Big Sur&#8217;s debut there will be a lot of Terminal Tamers suddenly finding Bash&#8217;s familiar <code>$</code> command prompt replaced with ZSH&#8217;s alien-feeling <code>%</code> command prompt!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="afterword">Afterword</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The creation of Taming the Terminal was executed using open source tools on an open source platform and with version control through the open source git technology. Allison Sheridan interviewed Dr. Helma van der Linden on how she created the book in an episode of the Chit Chat Across the Pond podcast. Helma walks through how each tool played its part, and how she developed the process. It&#8217;s a great story of ingenuity on Helma&#8217;s part and an amazing story of how open source allows us to build great things. You can find the audio and notes with links to the tools at <a href="https://www.podfeet.com/blog/2020/08/ccatp-649/" class="bare">https://www.podfeet.com/blog/2020/08/ccatp-649/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="colophon">Colophon</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Podfeet Press</p>
+</div>
+<div class="paragraph">
+<p>&#169; 2020 by The Podfeet Press</p>
+</div>
+<div class="paragraph">
+<p>Published in the Milky Way Galaxy</p>
+</div>
+<div class="paragraph">
+<p>Version 1.4.2</p>
+</div>
+<div class="paragraph">
+<p>Date revision 2020-10-07</p>
+</div>
+<div class="paragraph">
+<p><em>Compiled: 2020-10-07  6-16-59</em></p>
+</div>
+<div class="paragraph">
+<p>This book is designed and handcrafted by Allison Sheridan and Helma van der Linden.
+The cover is designed by Allison Sheridan.
+The font types are Noto Sans and Noto Serif.</p>
+</div>
+<div class="paragraph">
+<p>Created in <a href="https://asciidoctor.org">Asciidoctor</a> and macOS.</p>
+</div>
+<div id="updates" class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Updates</strong></p>
+</div>
+<div class="paragraph">
+<p>This book will be updated whenever new episodes are added or errors are fixed.
+You can check if a new update is available at:
+<a href="https://github.com/bartificer/taming-the-terminal/releases" class="bare">https://github.com/bartificer/taming-the-terminal/releases</a></p>
+</div>
+</div>
+</div>
+<div id="license" class="paragraph">
+<p><strong>Creative Commons license</strong></p>
+</div>
+<div class="paragraph">
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<a class="image" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="assets/creativecommons.org_by-nc-nd_4.0_88x31.png" alt="Creative Commons License"></a>
 </div>
 </div>
 </div>
@@ -15796,8 +16005,8 @@ tmux new <span style="color: #000080">-s</span> topterm <span style="color: #d14
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 1.2<br>
-Last updated 2020-08-17 06:14:31 UTC
+Version 1.4.2<br>
+Last updated 2020-10-07 06:15:42 UTC
 </div>
 </div>
 </body>
